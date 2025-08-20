@@ -29,23 +29,23 @@ public class App {
         bubbleSort.setObserver(observador);
         bubbleSort.sort(vetorBubble);
         
-        /*
         Integer[] vetor = carregarArquivo("numeros_aleatorios.txt");
 
         System.out.println("Antes de ordenar: " + Arrays.toString(vetor));
         
+        Integer[] vetorBubbleSortFlag = vetor.clone();
+        BubbleSortFlag bubbleSortFlag = new BubbleSortFlag();
+        bubbleSortFlag.sort(vetorBubbleSortFlag);
+        System.out.println("\nBubble Sort Flag - Comparações: " + bubbleSortFlag.getContComparacao() + ", Trocas: " + bubbleSortFlag.getContTroca());
+        System.out.println("Fases: " + bubbleSortFlag.getContFases());
+        
+        /*
         Integer[] vetorBubbleSort = vetor.clone();
         BubbleSort bubbleSort = new BubbleSort();
         bubbleSort.sort(vetorBubbleSort);
         System.out.println("\nBubble Sort - Comparações: " + bubbleSort.getContComparacao() + ", Trocas: " + bubbleSort.getContTroca());
         System.out.println("Fases: " + bubbleSort.getContFases());
  
-        Integer[] vetorBubbleSortFlag = vetor.clone();
-        BubbleSortFlag bubbleSortFlag = new BubbleSortFlag();
-        bubbleSortFlag.sort(vetorBubbleSortFlag);
-        System.out.println("\nBubble Sort Flag - Comparações: " + bubbleSortFlag.getContComparacao() + ", Trocas: " + bubbleSortFlag.getContTroca());
-        System.out.println("Fases: " + bubbleSortFlag.getContFases());
-     
         Integer[] vetorSelection = vetor.clone();
         SelectionSort selectionSort = new SelectionSort();
         selectionSort.sort(vetorSelection);
